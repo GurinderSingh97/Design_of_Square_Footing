@@ -1,13 +1,13 @@
 %% Square Footing
-%% Side_of_Column in m
+%% Side_of_Column in mm
 # name: Side_of_Column
 # type: scalar
-0.500
+450
 
-%% Load in KN
+%% Load in N
 # name: Load
 # type: scalar
-600
+2300000
 
 %% Assume the Self Weight of the Footing in %
 # name: Self_Weight
@@ -22,18 +22,18 @@
 # type: scalar
 415
 
-%% Soil_Pressure in KN/m^2
+%% Soil_Pressure in N/mm^2
 # name: Soil_Pressure
 # type: scalar
-120
+0.300
 
 # name: Clear_Cover
 # type: scalar
-60
+75
 
 # name: Side_Cover
 # type: scalar
-60
+75
 
 # name: Clear_Cover_for_Footing
 # type: scalar
@@ -41,12 +41,12 @@
 
 # name: dia
 # type: scalar
-12
+16
 
-%% Percentage of steel in under-reinforced section
+%% Percentage of steel
 # name: pt
 # type: scalar
-0.3
+0.25
 
 # name: Fck_for_Column
 # type: scalar
