@@ -27,11 +27,11 @@ Required_Area_of_Footing = (Vertical_Load_on_Column/Soil_Pressure);
 printf("Required_Area_of_Footing = %d mm^2 \n",Required_Area_of_Footing)
 
 % Side of Rectangular Footing
-Side_of_Footing = round((sqrt(Required_Area_of_Footing))/1000)*1000;
+Side_of_Footing = round(sqrt(Required_Area_of_Footing)/100)*100;
 printf("Side_of_Footing = %d mm \n",Side_of_Footing)
 
 Provided_Area_of_Footing = Side_of_Footing*Side_of_Footing;
-printf("Provided_Area_of_Footing = %d m^2 \n",Provided_Area_of_Footing)
+printf("Provided_Area_of_Footing = %d mm^2 \n",Provided_Area_of_Footing)
 
 % Net Upward pressure
 Net_Upward_Pressure = (1.5*Load)/(Side_of_Footing*Side_of_Footing);
@@ -75,7 +75,7 @@ printf("Permissible_Shear_Stress = %d N/mm^2 \n",Permissible_Shear_Stress)
 
 L_bey_col = (Side_of_Footing-Side_of_Column)/2;
 d_one_way_shear = round((Net_Upward_Pressure*L_bey_col)/(Net_Upward_Pressure+Permissible_Shear_Stress));
-printf("Eff_depth_one_way_shear = %d N/mm^2 \n",d_one_way_shear)
+printf("Eff_depth_one_way_shear = %d mm \n",d_one_way_shear)
 
 disp("\n")
 disp("Depth on the basis of Two Way Shear:-")
